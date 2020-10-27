@@ -1,0 +1,135 @@
+*{padding:0; margin: 0; box-sizing: border-box;}
+
+body {
+    height: 100%vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../masterPage/assets/img/sub/ruadef.png);
+
+}
+
+/*.box{
+    width: 400px;
+    height: 400px;
+    background: pink;
+}*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    /**background: rgb(229,229,229);
+    background: linear-gradient(0deg, rgba(229,229,229,1) 0%, rgba(243,216,224,1) 50%, rgba(247,212,222,1) 100%);**/
+    
+    /**background-image: url(../img/estrelas.jpg);**/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 350px;
+    background: #c5ddd3;
+    position: relative;
+    border: 0;
+    border-radius: 60px 0px 0px 60px;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    /**background: rgb(244,26,116);   **/
+    background: #f8f8ff;
+    width: 40%;
+    height: 100%;
+    border: 0;
+    border-radius: 60px 0px 0px 60px;
+    box-shadow: 5px 0px 2px rgb(142 168 173);
+}
+
+.first-colum {
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 1;
+}
+
+.second-colum {
+    flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.form input {
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+}
+
+.title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #217ecf; 
+    font-weight: lighter;
+    font-style: inherit;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #074a86;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.button {
+    margin-top: 20px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color:black;
+    font-size: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100px;
+    align-self: center;
+
+}
+
+.button-second {
+    background-color: #c5ddd3;
+    border: 1.5px solid #1d6fb7;
+}
+
+.button-second:hover{
+    background-color: #1d6fb7;
+}
+
+.input-group-text {
+    background:#1d6fb7 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+
+/**.box .image{
+    height: 300px;
+    width: 500px;
+    background: url(../img/capa.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+**\
